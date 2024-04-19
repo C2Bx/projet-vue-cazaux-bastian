@@ -1,0 +1,104 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fc;
+  }
+  
+  /* Centering the main content */
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Styling the table */
+  table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Hover effect for rows */
+  tr:hover:not(:first-child) {
+    background-color: #f5f5f5;
+  }
+  
+  /* Completed task styling */
+  .completed {
+    text-decoration: line-through;
+    color: #bbb;
+  }
+  
+  /* Custom checkbox styling */
+  [type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  [type="checkbox"]:checked {
+    background-color: #4CAF50;
+  }
+  
+  [type="checkbox"]:checked:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Progress bar styling */
+  progress {
+    width: 100%;
+    height: 20px;
+    color: #4CAF50; /* Color of the progress bar */
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #eee;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #4CAF50;
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: #4CAF50;
+  }
+  
+  /* Header styling */
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
